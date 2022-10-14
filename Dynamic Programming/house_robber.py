@@ -18,6 +18,6 @@ class Solution:
         b = 0 # dp[i - 1]
         for num in nums:
             c = max(a + num, b) # calculates i
-            a = b; # i-2 -> i-1
-            b = c; # i-1 -> i
+            a = b; # i-2 := i-1
+            b = c; # i-1 := i
         return b
