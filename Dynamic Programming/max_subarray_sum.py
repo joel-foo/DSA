@@ -4,6 +4,5 @@ class Solution:
         max_sum = float('-inf')
         for num in nums:
             max_slice = max(num, max_slice + num)
-            print(max_slice)
             max_sum = max(max_sum, max_slice)
         return max_sum
