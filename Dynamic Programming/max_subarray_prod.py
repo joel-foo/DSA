@@ -1,6 +1,5 @@
-#O(n) Time, O(1) space -1D DP
-# Key idea: prevMin becomes prevMax when num < 0, else prevMax becomes prevMin
-# when num > 0
+#O(n) Time, O(1) space - 1D DP
+# Key idea: prevMin becomes prevMax when num < 0, else prevMax becomes prevMin when num > 0
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
         prevMin = prevMax = res = nums[0]
