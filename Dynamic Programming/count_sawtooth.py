@@ -7,6 +7,7 @@ def count_sawtooth(arr):
   count = 0
   for i in range(1, len(arr)):
     if arr[i] > arr[i - 1]:
+      # up sawtooth ending in arr[i] = appending arr[i] to any contiguous down sawtooth ending in arr[i - 1] + the [arr[i - 1], arr[i]]
       up = down + 1
       # If we are in up sawtooth, then the number of down sawtooth should be reset (i.e. it is not possible to get a down sawtooth ending in arr[i])
       down = 0
